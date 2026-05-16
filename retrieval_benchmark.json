@@ -1,0 +1,176 @@
+[
+  {
+    "original_query": "How does the system handle peak load?",
+    "expanded_query": "How does the system handle peak load, traffic spikes, high throughput, and sudden demand surges? Include auto-scaling, load balancing, circuit breakers, rate limiting, and backpressure mechanisms.",
+    "strategy_a": [
+      {
+        "rank": 1,
+        "doc_id": "doc_001",
+        "title": "Load Balancing and Peak Traffic",
+        "score": 0.492,
+        "snippet": "The system employs a multi-tier load balancing architecture to handle peak load scenarios. At the edge layer, an [...]"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_002",
+        "title": "Horizontal Scaling Strategy",
+        "score": 0.4645,
+        "snippet": "Horizontal scaling is the primary strategy for managing increased throughput demands. Stateless application [...]"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_007",
+        "title": "API Rate Limiting and Throttling",
+        "score": 0.3386,
+        "snippet": "Rate limiting protects backend services from abusive or runaway clients. A token-bucket algorithm implemented in [...]"
+      }
+    ],
+    "strategy_b": [
+      {
+        "rank": 1,
+        "doc_id": "doc_001",
+        "title": "Load Balancing and Peak Traffic",
+        "score": 0.5551,
+        "snippet": "The system employs a multi-tier load balancing architecture to handle peak load scenarios. At the edge layer, an [...]"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_002",
+        "title": "Horizontal Scaling Strategy",
+        "score": 0.4426,
+        "snippet": "Horizontal scaling is the primary strategy for managing increased throughput demands. Stateless application [...]"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_005",
+        "title": "Asynchronous Processing and Message Queues",
+        "score": 0.4195,
+        "snippet": "Computationally intensive operations are decoupled from the synchronous request path using Apache Kafka as a [...]"
+      }
+    ],
+    "overlap": {
+      "shared_docs": [
+        "doc_001",
+        "doc_002"
+      ],
+      "overlap_count": 2,
+      "jaccard": 0.5
+    }
+  },
+  {
+    "original_query": "What strategies are used to ensure data is not lost during a failure?",
+    "expanded_query": "What strategies are used to ensure data is not lost during a failure?\"\n\nOutput only the rewritten query \u2014 no preamble, no explanation. \u2014 include related concepts such as scalability, fault tolerance, performance optimisation, distributed systems patterns, and infrastructure automation.",
+    "strategy_a": [
+      {
+        "rank": 1,
+        "doc_id": "doc_009",
+        "title": "Data Replication and Fault Tolerance",
+        "score": 0.4569,
+        "snippet": "Fault tolerance is achieved through synchronous multi-region replication for critical data stores. The primary [...]"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_006",
+        "title": "Observability and Monitoring",
+        "score": 0.2886,
+        "snippet": "The observability stack consists of three pillars: metrics, logs, and traces. Prometheus scrapes metrics from all [...]"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_005",
+        "title": "Asynchronous Processing and Message Queues",
+        "score": 0.2813,
+        "snippet": "Computationally intensive operations are decoupled from the synchronous request path using Apache Kafka as a [...]"
+      }
+    ],
+    "strategy_b": [
+      {
+        "rank": 1,
+        "doc_id": "doc_009",
+        "title": "Data Replication and Fault Tolerance",
+        "score": 0.4929,
+        "snippet": "Fault tolerance is achieved through synchronous multi-region replication for critical data stores. The primary [...]"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_005",
+        "title": "Asynchronous Processing and Message Queues",
+        "score": 0.3854,
+        "snippet": "Computationally intensive operations are decoupled from the synchronous request path using Apache Kafka as a [...]"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_006",
+        "title": "Observability and Monitoring",
+        "score": 0.3607,
+        "snippet": "The observability stack consists of three pillars: metrics, logs, and traces. Prometheus scrapes metrics from all [...]"
+      }
+    ],
+    "overlap": {
+      "shared_docs": [
+        "doc_005",
+        "doc_006",
+        "doc_009"
+      ],
+      "overlap_count": 3,
+      "jaccard": 1.0
+    }
+  },
+  {
+    "original_query": "How are external clients prevented from overwhelming the backend services?",
+    "expanded_query": "How are external clients prevented from overwhelming the backend services?\"\n\nOutput only the rewritten query \u2014 no preamble, no explanation. \u2014 include related concepts such as scalability, fault tolerance, performance optimisation, distributed systems patterns, and infrastructure automation.",
+    "strategy_a": [
+      {
+        "rank": 1,
+        "doc_id": "doc_007",
+        "title": "API Rate Limiting and Throttling",
+        "score": 0.4098,
+        "snippet": "Rate limiting protects backend services from abusive or runaway clients. A token-bucket algorithm implemented in [...]"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_010",
+        "title": "Security and Zero-Trust Architecture",
+        "score": 0.3808,
+        "snippet": "The system follows a zero-trust security model where no network location is inherently trusted. All internal [...]"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_008",
+        "title": "Microservices Communication Patterns",
+        "score": 0.3463,
+        "snippet": "Inter-service communication uses a hybrid approach: synchronous REST over HTTP/2 for latency-sensitive reads and [...]"
+      }
+    ],
+    "strategy_b": [
+      {
+        "rank": 1,
+        "doc_id": "doc_007",
+        "title": "API Rate Limiting and Throttling",
+        "score": 0.4407,
+        "snippet": "Rate limiting protects backend services from abusive or runaway clients. A token-bucket algorithm implemented in [...]"
+      },
+      {
+        "rank": 2,
+        "doc_id": "doc_002",
+        "title": "Horizontal Scaling Strategy",
+        "score": 0.4345,
+        "snippet": "Horizontal scaling is the primary strategy for managing increased throughput demands. Stateless application [...]"
+      },
+      {
+        "rank": 3,
+        "doc_id": "doc_005",
+        "title": "Asynchronous Processing and Message Queues",
+        "score": 0.4298,
+        "snippet": "Computationally intensive operations are decoupled from the synchronous request path using Apache Kafka as a [...]"
+      }
+    ],
+    "overlap": {
+      "shared_docs": [
+        "doc_007"
+      ],
+      "overlap_count": 1,
+      "jaccard": 0.2
+    }
+  }
+]
